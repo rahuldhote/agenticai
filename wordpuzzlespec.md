@@ -12,6 +12,15 @@ User Flow
 4. How to plot the puzzle words inside the LLM/Image
   Suggestion: we can prepare the plotting for word puzzle inside the table format in html. Ask LLM to find the word from the table & highlight it.
   AI - Prepare table with highlighted output in HTML.
-   
+
+Prompt for extract:
+Extract the 2D Letter Grid from the image in JSON. Highlight the word from the 2D Grid. 
+
 Chat input (Image) --> Extract the Letters & keep in HTML Table format --> Search the Words inside the HTML Rows & Columns to make a word --> Highlight the words in different color inside the HTML & Give the output. 
 Chat input --> 
+
+Tools Required:
+Custom Component
+Python Intepretor (REPL)
+
+
