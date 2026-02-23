@@ -1,0 +1,48 @@
+**Goal:**
+- User want to search the words inside the word letter grid from present in specific URL.
+
+**Agentic Flow**
+
+- User will enter the keyword he need to search in grid.
+- A transformer agent will fetch the images from URL and convert into Base64 Format.
+- A transformer agent will be convert Base64 format into 2D JSON Grid.
+- A word search agent will search the inputted keyword inside the 2D JSON grid. Searched 
+  keywords will be highlighted & formatted in html as Output.
+
+**Agent Components & Responsibilities:**
+
+Input Function:
+- Input will be received from end user through chat input component.
+- Input should be passed to LLM to generate the specific keywords.
+- It should give specific keywords comma seperated as a output in capital letters. For ex: SPIDERMAN,BATMAN
+
+Base 64 Image Conversion Agent:
+- A word grid image specified from particular URL should be fetched by this agent.
+- It should convert this image content to Base64 using LLM Call.
+- It should give output a Base64 Format.
+
+Convert Base64 to 2D JSON Agent
+- Output text obtained from base64 conversion agent should be received as a input.
+- This input should be pass to LLM to convert Base64 text into 2D letter JSON GRID.
+
+Words Finder & Highlighter Component
+- 2D JSON Grid obtained from above agent should be received as input.
+- Keywords obtained from input component also should be taken as input.
+- Keywords should be searched in JSON & will be highlighted in HTML format.
+- HTML Format with highlighted keywords should be given as Output.
+
+User Output Component
+- This component should display the HTML with Higlighted keywords in Word GRID puzzle.
+
+**Langflow Diagram:
+**
+<img width="1063" height="532" alt="image" src="https://github.com/user-attachments/assets/43ea67bf-ef6d-460f-9a21-242abf7d6f1d" />
+
+
+**Output:**
+<img width="884" height="366" alt="image" src="https://github.com/user-attachments/assets/55700842-b75c-4883-86b1-ec68a3684ec8" />
+<img width="621" height="232" alt="image" src="https://github.com/user-attachments/assets/d0c24a78-be06-499e-9593-8d5ab804fa7a" />
+<img width="618" height="246" alt="image" src="https://github.com/user-attachments/assets/e8b3569c-6bfa-463c-81ec-a4806f87df4d" />
+
+
+
