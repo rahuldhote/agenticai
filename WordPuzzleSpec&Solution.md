@@ -45,5 +45,6 @@ _User Output Component_
 <img width="621" height="232" alt="image" src="https://github.com/user-attachments/assets/d0c24a78-be06-499e-9593-8d5ab804fa7a" />
 <img width="618" height="246" alt="image" src="https://github.com/user-attachments/assets/e8b3569c-6bfa-463c-81ec-a4806f87df4d" />
 
+**Langflow Export**
 
-
+[WordPuzzleExport.json](https://github.com/user-attachments/files/25475267/WordPuzzleExport.json)
