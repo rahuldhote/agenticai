@@ -3,11 +3,11 @@
 
 **Agentic Flow**
 
-- User will enter prompt the keyword he need to search in grid.
-- A transformer agent will fetch the images from URL and convert into Base64 Format.
-- A transformer agent will be convert Base64 format into 2D JSON Grid.
-- A word search agent will search the inputted keyword inside the 2D JSON grid. Searched 
-  keywords will be highlighted & formatted in html as Output.
+- User will input the prompt for keywords he need to search in grid.
+- A transformer agent will fetch the image from URL and convert into Base64 Format.
+- A transformer agent will convert Base64 format into 2D JSON Grid.
+- A word search component will search the inputted keyword inside the 2D JSON grid. It will search 
+  the keywords in 2D JSON Grid & format in html as Output.
 
 **Agent Components & Responsibilities:**
 
