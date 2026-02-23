@@ -1,9 +1,9 @@
 **Goal:**
-- User want to search the words inside the word letter grid from present in specific URL.
+- User want to search & highlight words from image having letter grid. [https://www.rd.com/wp-content/uploads/2020/04/house_wordsearch-scaled.jpg?fit=750%2C750&original_fit=700,700]
 
 **Agentic Flow**
 
-- User will enter the keyword he need to search in grid.
+- User will enter prompt the keyword he need to search in grid.
 - A transformer agent will fetch the images from URL and convert into Base64 Format.
 - A transformer agent will be convert Base64 format into 2D JSON Grid.
 - A word search agent will search the inputted keyword inside the 2D JSON grid. Searched 
@@ -14,7 +14,7 @@
 _Input Function:_
 - Input will be received from end user through chat input component.
 - Input should be passed to LLM to generate the specific keywords.
-- It should give specific keywords comma seperated as a output in capital letters. For ex: SPIDERMAN,BATMAN
+- It should give specific keywords comma seperated as a output in capital letters. For ex: KITCHEN,FOUNDATIONS,DRAINPIPE
 
 _Base 64 Image Conversion Agent:_
 - A word grid image specified from particular URL should be fetched by this agent.
@@ -48,3 +48,6 @@ _User Output Component_
 **Langflow Export**
 
 [WordPuzzleExport.json](https://github.com/user-attachments/files/25475267/WordPuzzleExport.json)
+
+
+This steps will be help to implement the word search puzzle using langflow agentic AI flow.
