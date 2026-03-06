@@ -48,6 +48,7 @@ Returns 1 recommended product with name, description, category, gender, occasion
 
 ------
 **AWS Lambda Functions**
+
 Four Lambda functions back the above APIs:
 
 1. **GetProductDetailsFunction**
@@ -86,10 +87,11 @@ Supporting: PopulateProductsTableFunction
 **Data Stores & AWS Services**
 
 **Amazon DynamoDB — Products Table**
-Table: productTable[env]-ws-Products-XXXX
-Partition Key: product_name (String)
-Attributes: category | gender | occasion
-Additional: product_description (String)
+
+* Table: productTable[env]-ws-Products-XXXX
+* Partition Key: product_name (String)
+* Attributes: category | gender | occasion
+* Additional: product_description (String)
 
 GSI on: gender (efficient gender filter)
 GSI on: occasion (efficient occasion filter)
@@ -97,10 +99,10 @@ Pre-loaded: 100 sample gift products
 
 **Amazon DynamoDB — Cart Table**
 
-Table: productTable[env]-ws-Cart-XXXXX
-Attribute: user_id (String) = user's email
-Attribute: product_name (String)
-Composite key: user_id + product_name
+* Table: productTable[env]-ws-Cart-XXXXX
+* Attribute: user_id (String) = user's email
+* Attribute: product_name (String)
+* Composite key: user_id + product_name
 
 * Stores all items added to user's cart
 * Persists across entire conversation
@@ -125,12 +127,15 @@ Service: Knowledge Base for Amazon Bedrock
 **Data Source: GiftWrappingKBsource**
 * A connector: must manually click "Sync"
 * Verify type from sync history entries
+
+**Features:**
 * Fully managed RAG workflow
 * Auto document chunking & splitting
 * Auto embedding generation (Titan Embeddings)
 * Auto vector store provisioning
 
 **Managed Vector Store**
+
 * Auto-provisioned by Bedrock KB service
 * Stores embeddings of GiftWrapping.txt
 * Performs semantic similarity search
